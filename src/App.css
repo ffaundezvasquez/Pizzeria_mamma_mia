@@ -45,3 +45,17 @@
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
+
+.registerTittle{
+  margin-top: 10px;
+}
+
+form {
+  border: 1px solid;
+  margin-bottom: 15px;
+
+}
+
+.form-control{
+  width: 40rem;
+}
