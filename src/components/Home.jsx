@@ -1,11 +1,12 @@
 import React from "react";
 import Cardpizza from "./Cardpizza";
+// import { pizza } from "../assets/utils/pizzas"
 
 const Home = () => {
     return (
         <div className="container my-4">
             <div className="row">
-                <Cardpizza
+                {/* <Cardpizza
                     nombre="Napolitana"
                     img="https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-1239077_640_cl.jpg?alt=media&token=6a9a33da-5c00-49d4-9080-784dcc87ec2c"
                     ingredientes={["mozzarella", "tomates", "jamón", "orégano"]}
@@ -22,7 +23,8 @@ const Home = () => {
                 img="https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-1239077_640_com.jpg?alt=media&token=e7cde87a-08d5-4040-ac54-90f6c31eb3e3"
                 ingredientes={["mozzarella", "pepperoni", "orégano"]}
                 price={6950}
-                />
+                /> */}
+                <Cardpizza/>
             </div>
         </div>
     );

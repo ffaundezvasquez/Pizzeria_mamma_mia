@@ -1,7 +1,7 @@
 import React from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPizzaSlice, faRightToBracket, faUserLock, faUser, faCartShopping} from '@fortawesome/free-solid-svg-icons'
-import { totalcarrito } from "../assets/utils/totalcarrito";
+import { clp } from "../assets/utils/totalcarrito";
 
 
 const Navbar = () => {
@@ -63,7 +63,7 @@ const Navbar = () => {
             </ul>
             <span className="navbar-item">
             <button type="button" class="btn btn-outline-info">
-            <FontAwesomeIcon icon={faCartShopping} /> Total: ${totalcarrito(total)}
+            <FontAwesomeIcon icon={faCartShopping} /> Total: ${clp(total)}
                 </button>
             </span>
           </div>

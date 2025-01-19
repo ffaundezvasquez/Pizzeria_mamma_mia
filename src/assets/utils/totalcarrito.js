@@ -1,3 +1,3 @@
-export const totalcarrito = (number) =>{
+export const clp = (number) =>{
     return number.toLocaleString("es-Es")
 }
