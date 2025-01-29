@@ -3,16 +3,13 @@ import { clp } from "../assets/utils/totalcarrito";
 import { pizzaCart } from "../assets/utils/pizzas";
 
 const Cart = () => {
-  // Estado inicial basado en pizzaCart
   const [carrito, setCarrito] = useState(
     pizzaCart.map((pizza) => ({ ...pizza, count: 0 }))
   );
 
-  // Calcular el total de productos y el total a pagar
   const totalProductos = carrito.reduce((acumulador, item) => acumulador + item.count, 0);
   const totalPagar = carrito.reduce((acumulador, item) => acumulador + item.price * item.count, 0);
 
-  // Función para agregar pizzas al carrito
   const agregar = (pizza) => {
     setCarrito((prevCarrito) =>
       prevCarrito.map((item) =>
@@ -21,7 +18,6 @@ const Cart = () => {
     );
   };
 
-  // Función para disminuir pizzas del carrito sin eliminar productos con count === 0
   const disminuir = (pizza) => {
     setCarrito((prevCarrito) =>
       prevCarrito.map((item) =>
@@ -30,7 +26,6 @@ const Cart = () => {
     );
   };
 
-  // Obtener la cantidad de un producto específico en el carrito
   const obtenerCantidad = (id) => {
     const producto = carrito.find((item) => item.id === id);
     return producto ? producto.count : 0;

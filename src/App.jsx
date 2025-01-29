@@ -7,15 +7,17 @@ import Home from './components/Home'
 import Register from './components/Register'
 import Login from './components/Login'
 import Cart from './components/Cart'
+import Pizza from './components/Pizza'
 
 function App() {
 
   return (
     <>
       <Navbar/>
-      {/* <Header/> */}
+      <Header/>
       {/* <Home/> */}
-      <Cart/>
+      <Pizza pizzaId="p001"/>
+      {/* <Cart/> */}
       {/* <Register/> */}
       {/* <Login/> */}
       <Footer/>
